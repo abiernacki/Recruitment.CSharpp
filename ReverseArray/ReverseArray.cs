@@ -2,11 +2,18 @@
 
 namespace ReverseArray
 {
-    class Program
+    class ReverseArray
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int N = int.Parse(Console.ReadLine());
+            string[] tab = Console.ReadLine().Split(' ');
+
+            for (int i = (N - 1); i >= 0; i--)
+            {
+                Console.Write(tab[i] + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
